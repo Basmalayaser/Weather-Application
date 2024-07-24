@@ -17,7 +17,7 @@ searchPosition.addEventListener("input",function(e){
 })
 
  async function getWeatherData(position){
-    let api= await fetch(`http://api.weatherapi.com/v1/current.json/forecast.json?days=3&key=${apikey}&q=${position}`)
+    let api= await fetch(`https://api.weatherapi.com/v1/current.json/forecast.json?days=3&key=${apikey}&q=${position}`)
     let data= await api.json()
     displayTodayWeather(data)
     displayTomorrow(data)
