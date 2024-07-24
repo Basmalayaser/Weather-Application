@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg p-5">
+        <div class="container px-lg-5 mx-lg-5 ">
+           <div class="logo d-flex">
+            <img src="./image/img1.png" alt="">
+            <div class="">
+                <h1><a class="navbar-brand" href="#">Weather</a></h1>
+                <span class="d-block">tagline goes here</span>
+            </div>
+           </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <section>
+          <div class="weather-input">
+            <div class="container px-lg-5">
+                <form class="find-location position-relative mx-5">
+                    <input type="text" placeholder="Find your location..." id="searchPosition">
+                    <input type="button" value="Find" id="submit">
+                </form>
+              </div>
+          </div>
+        </section>
+        <section>
+          <div class="weather-content container px-lg-5">
+            <div class="row rounded-3 mx-5">
+                <div class="col-12 col-lg-4 p-0">
+                    <div class="inner text-color">
+                            <div class="forecast-header d-flex justify-content-between p-2">
+                                <span id="todayDay">wed</span>
+                                <span id="todayDayNum">10</span>
+                            </div>
+                            <div class="forecast-body p-4">
+                              <div id="country" class="py-3">Cairo</div>
+                            <span id="temp_c" class="temp">35.4</span>
+                            <span class="temp"><sup>o</sup>C</span>
+                            <div>
+                                <img id="tempIcone" src="" alt="jjjj" width="80">
+                            </div>
+                            <div id="tempText" class="maincolor pb-2">Clear</div>
+    
+                            <div class="d-flex py-3 ">
+                              <div class="me-4">
+                                 <img src="./image/img 5.png" alt="">
+                                <span id="humidity">20%</span>                 
+                              </div>
+                              <div class="me-4">
+                                <img src="./image/img4.png" alt="">
+                                <span id="wind">18km/h</span>
+                              </div>
+                              <div class="">
+                                <img src="./image/img3.png" alt="">
+                                <span id="windDirection">East</span>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                 </div>
+    
+            <div class="col-12 col-lg-4 p-0 tforecast ">
+              <div class="inner text-color text-center">
+                      <div class="forecast-header p-2">
+                          <span id="tDay">wed</span>
+                      </div>
+                      <div class="forecast-body p-3">
+                        <div>
+                          <img id="tIcon" class="py-4" src="" alt="" width="50">
+                      </div>
+                      <div class="text-white h3 fw-bold mb-0">
+                        <span id="tMaxTemp" class="">35.4</span>
+                        <sup>o</sup>
+                      </div>
+                      <div class="">
+                        <span id="tMinTemp" class="">35.4</span>
+                        <sup>o</sup>
+                      </div>
+                      <div id="tText" class="maincolor py-4">Clear</div>
+                      
+                      </div>
+              </div>
+            </div>
+    
+    
+            <div class="col-12 col-lg-4 p-0 ">
+              <div class="inner text-color text-center">
+                      <div class="forecast-header p-2">
+                          <span id="thirdDayText">wed</span>
+                      </div>
+                      <div class="forecast-body p-3">
+                        <div>
+                          <img id="thirdIcon" class="py-4" src="" alt="" width="50">
+                      </div>
+                      <div class="text-white h3 fw-bold mb-0">
+                        <span id="thirdMaxTemp" class="">35.4</span>
+                        <sup>o</sup>
+                      </div>
+                      <div class="">
+                        <span id="thirdMinTemp" class="">35.4</span>
+                        <sup>o</sup>
+                      </div>
+                      <div id="thirdText" class="maincolor py-4">Clear</div>
+                      
+                      </div>
+              </div>
+            </div>
+    
+    
+           </div>
+          </div>
+        </section>
+   
+  
+      </main>
+      <footer>
+				<div class="container">
+					<div class="row pt-5 ">
+						<div class="col-md-8">
+							<form action="#" class="position-relative mb-4">
+								<input type="text" placeholder="Enter your email to subscribe...">
+								<input type="submit" value="Subscribe">
+							</form>
+						</div>
+						<div class="col-md-3 col-md-offset-1">
+							<div class="social-links ps-5">
+								<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+								<a href="#"><i class="fa-brands fa-twitter"></i></a>
+								<a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+								<a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<p class="text-color pb-5 m-0">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+				</div>
+			</footer>
+
+   <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
